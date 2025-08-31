@@ -8,4 +8,6 @@ int main()
     sum = a+b;
     printf("Sum of the 2 numbers: %d",sum);
     return 0;
+
 }
+   
