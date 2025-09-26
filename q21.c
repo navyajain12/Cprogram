@@ -14,11 +14,17 @@ December, 31 days
 
 */
 #include <stdio.h>
+
+//start of main
 int main()
 {
     int month;
+
+    //input month number from user from 1-12
     printf("Input month number\n");
     scanf("%d",&month);
+
+    //check for month according to number
     switch(month){
         case 1:
           printf("January-31 Days");
@@ -60,5 +66,7 @@ int main()
           printf("Invalid Input");
           break;
     }
+
     return 0;
 }
+//end of main

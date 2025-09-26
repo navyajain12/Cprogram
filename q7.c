@@ -13,13 +13,22 @@ After swap: 14 7
 */
 #include <stdio.h>
 
+//start of main
 int main()
 {
     int a=5,b=10;
+
+    //print original integers
     printf("Before Swapping: a=%d, b=%d\n",a,b);
+
+    //swap w/o 3rd integer
     a=a+b;
     b=a-b;
     a=a-b;
+
+    //print swapped integers
     printf("After Swapping: a=%d, b=%d\n",a,b);
+
     return 0;
 }
+//end of main

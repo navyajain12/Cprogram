@@ -17,9 +17,16 @@ F = (°C × 9/5) + 32
 int main()
 {
     double F,C;
+    //input for temp in calcius
     printf("Input temperature in Celcius\n");
     scanf("%lf",&C);
+
+    //convert celcius to farenheit
     F = (C*1.8)+32;
+
+    //print temp in farenheit
     printf("The temperature in Farenheit: %lf",F);
+
     return 0;
 }
+//end of main

@@ -29,11 +29,17 @@ Grade F
 
 */
 #include <stdio.h>
+
+//start of main
 int main()
 {
     int p;
+
+    //input percentage from user
     printf("Input percentage from 0-100\n");
     scanf("%d",&p);
+
+    //check grade according to percentage
     if(p>=90 && p<=100)
       printf("Grade A");
     else if(p>=80 && p<=89)
@@ -44,5 +50,7 @@ int main()
       printf("Grade D");
     else if(p<60)
       printf("Grade F");
+
     return 0;
 }
+//end of main

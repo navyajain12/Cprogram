@@ -12,16 +12,24 @@ After swap: 1 -1
 */
 #include <stdio.h>
 
+//start of main
 int main()
 {
     int a=10,b=35;
     int c;
+    //print given integers
     printf("Original First Integer %d\n",a);
     printf("Original Second Integer %d\n",b);
+
+    //swap them using 3rd var
     c=a;
     a=b;
     b=c;
+
+    //print swapped integers
     printf("Swapped First Integer %d\n",a);
     printf("Swapped Second Integer %d",b);
+
     return 0;
 }
+//end of main

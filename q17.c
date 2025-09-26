@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <math.h>
 
+//start of main
 int main() {
     double a, b, c;
     double disc, root1, root2, realPart, imagPart;
@@ -32,3 +33,4 @@ int main() {
 
     return 0;
 }
+//end of main

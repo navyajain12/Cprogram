@@ -13,14 +13,21 @@ Sum = 19
 */
 #include <stdio.h>
 
+//start of main
 int main()
 {
     int a,b,sum;
+
+    //get input for 2 numbers
     printf("Input 2 numbers\n");
     scanf("%d%d",&a,&b);
-    sum = a+b;
-    printf("Sum of the 2 numbers: %d",sum);
-    return 0;
 
+    //calculate sum
+    sum = a+b;
+
+    //print sum
+    printf("Sum of the 2 numbers: %d",sum);
+
+    return 0;
 }
-   
+ //end of main  

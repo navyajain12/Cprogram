@@ -14,13 +14,20 @@ Area=21, Perimeter=20
 */
 #include <stdio.h>
 
+//start of main
 int main()
 {
     int l=4,b=5;
     double area,p;
+
+    //calculate area and perimeter
     area = l*b;
     p = 2*(l+b);
+
+    //print both
     printf("Area of the 2 numbers: %lf \n",area);
     printf("Perimeter of the 2 numbers: %lf",p);
+
     return 0;
 }
+//end of main

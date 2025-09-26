@@ -14,13 +14,20 @@ Area=28.27, Circumference=18.85
 */
 #include <stdio.h>
 
+//start of main
 int main()
 {
     double rad=7;
     double area,circ;
+
+    //calculate area and circumference of circle
     area = 3.14*rad*rad;
     circ = 2*3.14*rad;
+
+    //print both
     printf("Circumference of the circle: %.2lf \n", circ);
     printf("Area of the circle: %.2lf \n",area);
+
     return 0;
 }
+//end of main

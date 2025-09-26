@@ -14,13 +14,23 @@ Sum=55
 */
 #include <stdio.h>
 
-int main(){
+//start of main
+int main()
+{
     int i,n,c=0;
+
+    //input number from user
     printf("Input a number\n");
     scanf("%d",&n);
+
+    //calculate sum till n natural numbers
     for(i=1;i<=n;i++){
         c=c+i;
     }
+
+    //print sum
     printf("The sum of the first %d natural numbers: %d",n,c);
+
     return 0;
 }
+//end of main

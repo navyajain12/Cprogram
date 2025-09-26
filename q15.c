@@ -25,11 +25,16 @@ Special character
 */
 #include <stdio.h>
 
+//start of main
 int main()
 {
     char ch;
+
+    //input character from user
     printf("Input a character\n");
     scanf("%c",&ch);
+
+    //check ASCII code for uppercase,lowercase,digit or special character
     if(ch>=65 && ch<=90)
       printf("%c is an Uppercase alphabet",ch);
     else if(ch>=97 && ch<=122)
@@ -38,5 +43,7 @@ int main()
       printf("%c is a digit",ch);
     else 
       printf("%c is a special character",ch);
+
     return 0;
 }
+//end of main

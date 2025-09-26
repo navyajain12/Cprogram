@@ -14,36 +14,44 @@ Friday
 
 */
 #include <stdio.h>
+
+//start of main
 int main()
 {
     int day;
+
+    //input day number from user
     printf("Input day number from 1-7\n");
     scanf("%d",&day);
+
+    //print day according to number 
     switch(day){
         case 1:
-          printf("Monday");
+          printf("Monday");    //1=monday
           break;
         case 2:
-          printf("Tuesday");
+          printf("Tuesday");   //2=tuesday
           break;
         case 3:
-          printf("Wednesday");
+          printf("Wednesday"); //3=wednesday
           break;
         case 4:
-          printf("Thursday");
+          printf("Thursday");  //4=thursday 
           break;
         case 5:
-          printf("Friday");
+          printf("Friday");    //5=friday
           break;
         case 6:
-          printf("Saturday");
+          printf("Saturday");  //6=saturday
           break;
         case 7:
-          printf("Sunday");
+          printf("Sunday");   //7=sunday
           break;
-        default:
+        default: 
           printf("Invalid Input");
           break;
     }
+
     return 0;
 }
+//end of main
