@@ -14,11 +14,17 @@ Output 2:
 
 */
 #include <stdio.h>
+
+//start of main 
 int main()
 {
     int i,n,n1,cf=0,hcf=0;
+
+    //input 2 numbers from user
     printf("Input two numbers\n");
     scanf("%d%d",&n,&n1);
+
+    //calculate hcf of the 2 numbers 
     for(i=1;i<=n;i++)
     {
        if(n%i==0 && n1%i==0)
@@ -26,6 +32,10 @@ int main()
        if(cf>hcf)
         hcf=cf;
     }
+
+    //print hcf
     printf("HCF: %d",hcf);
+
     return 0;
 }
+//end of main

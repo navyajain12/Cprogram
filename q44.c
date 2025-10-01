@@ -15,20 +15,26 @@ Approximate sum: 4.4
 */
 #include <stdio.h>
 
-int main() {
+//start of main
+int main() 
+{
     int n, i;
     float sum = 1,num,deno;
 
+    //input number of terms from user
     printf("Enter the number of terms: ");
     scanf("%d", &n);
 
+    //calculate sum of the series
     for(i = 2; i <= n; i++) {
         num = 2 * i - 1;
         deno = 2 * i;
         sum += num / deno;
     }
 
+    //print sum
     printf("Approximate sum: %.1f\n", sum);
 
     return 0;
 }
+//end of main

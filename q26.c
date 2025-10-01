@@ -14,12 +14,20 @@ Output 2:
 
 */
 #include <stdio.h>
+
+//start of main
 int main()
 {
     int i,n;
+
+    //input number from user
     printf("Input a number\n");
     scanf("%d",&n);
+
+    //print numbers from 1 to n
     for(i=1;i<=n;i++)
        printf("%d\n",i);
+
     return 0;
 }
+//end of main

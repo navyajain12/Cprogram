@@ -28,27 +28,38 @@ Membership Cancelled
 
 */
 #include <stdio.h>
+
+//start of main
 int main()
 { 
     int days,fine;
+
+    //input late days from user 
     printf("Input number of late days\n");
     scanf("%d",&days);
+
+    //calculate fine for less than 5 days
     if(days<=5)
     {  
        fine=days*2;
        printf("Fine: %d",fine);
     }
+    //calculate fine for 5-10 days
     else if(days>5 && days<=10)
     {
        fine=days*4;
        printf("Fine: %d",fine);  
     }
+    //calculate fine for 10-20 days
     else if(days<=20)
     {
        fine=days*6;
        printf("Fine: %d",fine);
     }
+    //if more days print cancel
     else
        printf("Membership Cancelled");
+
     return 0;
 }
+//end of main

@@ -14,23 +14,36 @@ Output 2:
 
 */
 #include <stdio.h>
+
+//start of main
 int main()
 {
     int n,i,j,c=0;
 
+    //input number from user
     printf("Input a number n\n");
     scanf("%d",&n);
+
     printf("Prime numbers till %d\n",n);
+
+    //numbers from 1 to n
     for(i=1;i<=n;i++)
     {   
         c=0;
+        //check factors of i
         for(j=1;j<=i;j++)
         {
            if(i%j==0)
               ++c;
         }
+
+        //check and print prime
         if(c==2)
           printf("%d\n",i);
+
     }
+
     return 0;
+
 }
+//end of main

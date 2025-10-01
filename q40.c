@@ -14,11 +14,17 @@ Output 2:
 
 */
 #include <stdio.h>
+
+//start of main
 int main()
 {
     int bin,dig,comp=0,place=1;
+
+    //input binary number from user
     printf("Input a binary number\n");
     scanf("%d",&bin);
+
+    //1’s complement of the binary number
     while(bin!=0)
     {
         dig = bin%10;
@@ -30,6 +36,10 @@ int main()
         place *= 10;
         bin/=10;
     }
+
+    //print complement
     printf("Complement of binary is: %d",comp);
+
     return 0;
 }
+//end of main

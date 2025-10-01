@@ -14,15 +14,25 @@ Output 2:
 
 */
 #include <stdio.h>
+
+//start of main
 int main()
 {
     int i,n,even=1;
+
+    //input number from user
     printf("Input a number\n");
     scanf("%d",&n);
+
+    //calculate product and print numbers from 1 to n
     for(i=2;i<=n;i+=2){
         even*=i;
        printf("%d %d\n",i,even);
     }
+
+    //print product
     printf("product: %d\n",even);
+
     return 0;
 }
+//end of main

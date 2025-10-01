@@ -14,15 +14,25 @@ Output 2:
 
 */
 #include <stdio.h>
+
+//start of main
 int main()
 {
     int i,n,f=1;
+
+    //input number from user
     printf("Input a number\n");
     scanf("%d",&n);
+
+    //calculate factorial
     for(i=1;i<=n;i++){
         f*=i;
        printf("%d %d\n",i,f);
     }
+
+    //print factorial
     printf("Factorial: %d\n",f);
+
     return 0;
 }
+//end of main

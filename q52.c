@@ -29,18 +29,34 @@ Pattern with stars spaced irregularly as shown.
 
 */
 #include <stdio.h>
+
+//start of main
 int main()
 {
     int i,j;
-    for(i=1;i<=3;i++){
-       for(j=1;j<=2*i-1;j++)
+
+    //check rows
+    for(i=1;i<=3;i++)
+    {
+      //check columns
+      for(j=1;j<=2*i-1;j++)
           printf("*\n");
-        printf("\n");
+
+      //next line 
+      printf("\n");
     }
-    for(i=2;i>=1;i--){
-       for(j=2*i-1;j>=1;j--)
+
+    //check rows
+    for(i=2;i>=1;i--)
+    {
+      //check columns
+      for(j=2*i-1;j>=1;j--)
           printf("*\n");
-        printf("\n");
+
+      //next line
+      printf("\n");
     }
+
     return 0;
 }
+//end of main

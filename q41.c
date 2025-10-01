@@ -16,6 +16,7 @@ Output 2:
 #include <stdio.h>
 #include <math.h>
 
+//start of main
 int main()
 {
     int n,i,num1,ldig,fdig,midpart,num=0,c=0,new=0;

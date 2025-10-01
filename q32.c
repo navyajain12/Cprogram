@@ -15,21 +15,32 @@ Not palindrome
 */
 #include <stdio.h>
 
-int main() {
+//start of main
+int main()
+{
     int num, original, reversed = 0;
 
+    //input number from user
     printf("Input a number to check palindrome\n");
     scanf("%d", &num);
+
+    //copy number
     original = num;
+
+    //calculate reversed digit
     while(num > 0) {
         int digit = num % 10;
         reversed = reversed * 10 + digit;
         num = num / 10;
     }
+
+    //check palindrome
     if(original == reversed) {
         printf("Palindrome\n");
     } else {
         printf("Not palindrome\n");
     }
+
     return 0;
 }
+//end of main

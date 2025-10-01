@@ -18,17 +18,24 @@ Output 1:
 
 */
 #include <stdio.h>
+
+//start of main
 int main()
 {
    int i,j,c=1;
+
+   //check rows
    for(i=5;i>=1;i--)
     {
+        //check columns
         for(j=i;j<=5;j++)
         {
+            //print number
             printf("%d",j);
         }
-        
+        //next line
         printf("\n");
     }
     return 0;
 }
+//end of main

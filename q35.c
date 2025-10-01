@@ -14,15 +14,24 @@ Output 2:
 
 */
 #include <stdio.h>
+
+//start of main
 int main()
 {
     int i,n;
+
+    //input number from user
     printf("Input a number\n");
     scanf("%d",&n);
+
+    //calculate and print factors of a number
     for(i=1;i<=n;i++)
     {
         if(n%i==0)
            printf("%d ",i);
     }
+
+
     return 0;
 }
+//end of main

@@ -23,11 +23,17 @@ Bill: ₹1700
 
 */
 #include <stdio.h>
+
+//start of main
 int main()
 {
     int unit;
+
+    //input no. of units from user
     printf("Input number of units\n");
     scanf("%d",&unit);
+
+    //calculate bill
     if(unit<=100)
       printf("Bill: %d",unit*5);
     else if(unit>100 && unit<=200)
@@ -36,5 +42,7 @@ int main()
       printf("Bill: %d",unit*10);
     else
       printf("Bill: %d",unit*12);
+
       return 0;
 }
+//end of main

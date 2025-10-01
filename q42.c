@@ -14,6 +14,8 @@ Not perfect number
 
 */
 #include <stdio.h>
+
+//start of main
 int main()
 {
     int i,n,sum=0;
@@ -26,9 +28,13 @@ int main()
     for(i=1;i<n;i++)
        if(n%i==0)
           sum+=i;
+    
+    //check perfect number
     if(sum==n)
        printf("%d is a perfect number ",n);
     else
        printf("%d is not a perfect number ",n);
+
     return 0;
 }
+//end of main

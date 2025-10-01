@@ -14,15 +14,20 @@ Not strong number
 
 */
 #include <stdio.h>
+
+//start of main
 int main()
 {
     int n,dig,num,i,sum=0;
 
+    //input number from user
     printf("Input a number\n");
     scanf("%d",&n);
 
+    //copy number
     num=n;
 
+    //check for strong number
     while(num!=0)
     {
         dig=num%10;
@@ -32,6 +37,7 @@ int main()
         num/=10;
     }
 
+    //print strong num or not
     if(sum==n)
       printf("%d is a strong number ",n);
     else
@@ -39,3 +45,4 @@ int main()
 
     return 0;
 }
+//end of main

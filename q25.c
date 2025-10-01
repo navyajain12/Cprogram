@@ -19,12 +19,18 @@ Output 3:
 
 */
 #include <stdio.h>
+
+//start of main
 int main()
 {
     int a,b;
     char op;
+
+    //input 2 nums and function from user
     printf("Input two numbers and the function to be performed\n");
     scanf("%d%d%c",&a,&b,&op);
+
+    //check which case to be used and printed
     switch(op)
     {
         case '+':
@@ -45,5 +51,7 @@ int main()
         default:
            printf("Invalid Input");
     }
+
     return 0;
 }
+//end of main

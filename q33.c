@@ -15,21 +15,32 @@ Not Armstrong
 */
 #include <stdio.h>
 
-int main() {
+//start of main
+int main()
+{
     int num, original, sum = 0;
 
+    //input number from user
     printf("Input a Number\n");
     scanf("%d", &num);
+
+    //copy number 
     original = num;
+
+    //calculate sum of cube of each digit
     while (num > 0) {
         int digit = num % 10;
         sum += digit * digit * digit;
         num /= 10;
     }
+
+    //check if armstrong
     if (sum == original) {
         printf("Armstrong\n");
     } else {
         printf("Not Armstrong\n");
     }
+
     return 0;
 }
+//end of main

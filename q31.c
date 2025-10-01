@@ -14,11 +14,17 @@ Output 2:
 
 */
 #include <stdio.h>
+
+//start of main
 int main()
 {
     int n,bin=0,rem,p=1;
+
+    //input number from user
     printf("Input a Number\n");
     scanf("%d",&n);
+
+    //calculate binary equivalent
     while(n>0)
     {   
         rem=n%2;
@@ -26,6 +32,10 @@ int main()
         p*=10;
         n/=2;
     }
+
+    //print binary equivalent
     printf("Binary Equivalent: %d",bin);
+
     return 0;
 }
+//end of main

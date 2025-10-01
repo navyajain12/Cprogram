@@ -19,19 +19,29 @@ No Profit No Loss
 
 */
 #include <stdio.h>
+
+//start of main
 int main()
 {
    double cp,sp,profit;
    double per;
+
+   //input cp and sp from user
    printf("Input Selling Price and Cost Price\n");
    scanf("%lf%lf",&sp,&cp);
+
+   //calculate profit and profit %
    profit=sp-cp;
    per=(profit*100)/cp;
+
+   //check if overall profit or loss
    if(per>0)
      printf("Profit percentage %.2lf",per);
     else{
      per*=-1;
      printf("Loss percentage %.2lf",per);
     }
+
     return 0;
 }
+//end of main

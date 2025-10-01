@@ -23,18 +23,29 @@ Note: Spaces indicate indentation.
 
 */
 #include <stdio.h>
+
+//start of main
 int main()
 {
     int i,j;
+
+    //check rows
     for(i=0;i<5;i++)
     {
+        //check columns
         for(j=0;j<=i;j++)
         {
+            //print spaces
             printf(" ");
         }
+        //print stars
         for(j=i;j<5;j++)
            printf("*");
+
+        //next line   
         printf("\n");
     }
+
     return 0;
 }
+//end of main

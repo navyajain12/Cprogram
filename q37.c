@@ -30,7 +30,9 @@ int lcm(int a, int b) {
     return (a / gcd(a, b)) * b;
 }
 
-int main() {
+//start of main
+int main() 
+{
     int num1, num2;
 
     // Read input values
@@ -41,3 +43,4 @@ int main() {
 
     return 0;
 }
+//end of main

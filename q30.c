@@ -14,15 +14,17 @@ Output 2:
 
 */
 #include <stdio.h>
+
+//start of main
 int main()
 {
     int n,num,dig,rev=0;
 
-    //get a number from user
+    //input number from user
     printf("Input a number\n");
     scanf("%d",&n);
-    num=n;
 
+    num=n;
     //digit extraction
     while (num!=0)
     {
@@ -31,7 +33,9 @@ int main()
         num/=10;
     }
 
+    //print reversed digit
     printf("Reversed Digit: %d",rev);
     
     return 0;
 }
+//end of main
